@@ -1,0 +1,88 @@
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'TTRounds', Courier, monospace;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    color: $white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 57px;
+
+    @include respond-above(md) {
+        font-size: 67px;
+    }
+}
+
+h2 {
+    font-size: 38px;
+
+    @include respond-above(md) {
+        font-size: 48px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+
+    @include respond-above(md) {
+        font-size: 32px;
+    }
+}
+
+h4 {
+    font-size: 22px;
+
+    @include respond-above(md) {
+        font-size: 24px;
+    }
+
+}
+
+a {
+    transition: all .4 ease-in-out;
+    color: $ink;
+    text-decoration: underline;
+
+    &:hover {
+        color: $cobalt;
+        text-decoration: none;
+    }
+}
+
+.red {
+    color: $coral !important;
+}
+
+.cobalt {
+    color: $cobalt !important;
+}
+
+.turquoise {
+    color: $turquoise !important;
+}
+
+.ink {
+    color: $ink !important;
+}
+
+.grey {
+    color: $lightgrey !important;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.small-text {
+    font-size: .6em;
+}

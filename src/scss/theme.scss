@@ -1,0 +1,40 @@
+$ink: #190F50;
+$turquoise: #32FFD7;
+$cobalt: #283CFF;
+$violet: #8250FA;
+$coral: #FA556E;
+$ice: #F4F3F6;
+$black: #131313;
+$white: #fff;
+$lightgrey: #666;
+$lightborder: #cccccc;
+
+@font-face {
+    font-family: 'Replica';
+    font-weight: 700;
+    font-style: normal;
+    src: url("/src/assets/fonts/ReplicaLLWeb-Bold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Replica';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/src/assets/fonts/ReplicaLLWeb-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'TTRounds';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/src/assets/fonts/tt_rounds_neue_compressed_medium-webfont.woff2") format('woff2');
+}
+
+@mixin box-shadow-grey {
+    -webkit-box-shadow: $box-shadow-grey;
+    -moz-box-shadow: $box-shadow-grey;
+    box-shadow: $box-shadow-grey;
+}
+
+@import "./breakpoints.scss";
+@import "./spacers.scss";

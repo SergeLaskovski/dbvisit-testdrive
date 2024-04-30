@@ -1,0 +1,31 @@
+@import '/src/scss/theme.scss';
+
+section.dbcards {
+    .db-header {
+        padding-top: 1.4em;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        img {
+            display: block;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            color: $cobalt;
+        }
+
+    }
+
+    h4 {
+        img {
+            margin-right: .4em;
+        }
+
+        display: flex;
+        align-items: center;
+    }
+
+}

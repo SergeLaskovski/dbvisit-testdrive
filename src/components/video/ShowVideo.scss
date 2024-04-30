@@ -1,0 +1,46 @@
+@import '/src/scss/theme.scss';
+
+section.loader {
+
+    flex: 1 0 100%;
+    max-width: 710px;
+
+    .load-images {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+
+        &.vid {
+            display: block;
+        }
+
+        .standby-laptop {
+            width: 300px;
+            margin: 0 auto;
+
+            @include respond-above(md) {
+                width: 500px;
+            }
+        }
+
+        .dbvisit-animated {
+            z-index: 10;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 120px;
+
+            @include respond-above(md) {
+                top: 160px;
+                left: 220px;
+                width: 200px;
+            }
+        }
+
+        @include respond-above(md) {
+            margin: 0 auto;
+        }
+    }
+
+}

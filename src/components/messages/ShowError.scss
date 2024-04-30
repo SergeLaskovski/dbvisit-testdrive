@@ -1,0 +1,24 @@
+@import '/src/scss/theme.scss';
+
+.error-message {
+    background-color: $white;
+    color: $ink;
+    border: 1px solid $coral;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.6);
+    min-width: 80%;
+    max-width: 98%;
+    min-height: 150px;
+    padding: 40px;
+
+    @include respond-above(md) {
+        min-width: 50%;
+    }
+
+    pre {
+        font-size: 12px;
+        font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+        white-space: pre-wrap;
+    }
+
+}

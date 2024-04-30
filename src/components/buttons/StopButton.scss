@@ -1,0 +1,39 @@
+@import '/src/scss/theme.scss';
+
+.stop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: unset;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: $coral;
+    font-size: 1.2rem;
+
+    .ico {
+        color: $lightgrey;
+        padding-left: 10px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .txt {
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+    }
+
+    &:hover {
+
+        .ico {
+            color: $coral;
+        }
+
+        .txt {
+            transition: all 0.2s ease-in-out;
+            opacity: 1;
+        }
+    }
+
+}

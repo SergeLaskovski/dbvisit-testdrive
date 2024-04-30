@@ -1,0 +1,44 @@
+@import '/src/scss/theme.scss';
+
+footer {
+    flex: 0 0 80px;
+    background-color: $white;
+    width: 100%;
+
+    .footer-inner {
+        height: 100%;
+        display: block;
+        padding: 10px 20px;
+        max-width: 1440px;
+        margin: auto;
+
+        >div {
+            flex: 0 0 50%;
+        }
+
+        .copy {
+            text-align: center;
+        }
+
+        .text-right {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        @include respond-above(md) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text-right {
+                margin-top: unset;
+                text-align: right;
+            }
+
+            .copy {
+                text-align: left;
+            }
+
+        }
+    }
+}

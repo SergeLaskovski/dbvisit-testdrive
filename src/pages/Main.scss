@@ -1,0 +1,25 @@
+@import '/src/scss/theme.scss';
+
+section.main-form-container {
+    flex: 1 1 auto;
+    padding: 10px;
+    margin-top: 0;
+
+    .main-form-text {
+        padding: 10px;
+    }
+
+    @include respond-above(md) {
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .main-form-text {
+            flex: 0 0 60%;
+            padding: 0 40px 0 0;
+        }
+
+    }
+
+}
